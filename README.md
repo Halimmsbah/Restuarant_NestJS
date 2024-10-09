@@ -58,78 +58,61 @@ $ npm run test:cov
 ```
 ## Project Structure
 ```
+  c:/Users/Halim/Desktop/study/projects/Restaurent Api/
   ├─]dist/ (ignored)
   ├─]node_modules/ (ignored)
   ├─ src/
   │  ├─ auth/
   │  │  ├─ decorators/
-  │  │  │  ├─ current-user.decerator.ts
-  │  │  │  └─ roles.decorator.ts
+  │  │  │  ├─ current_user.decorators.ts
+  │  │  │  └─ roles.decorators.ts
   │  │  ├─ dto/
-  │  │  │  ├─ login.dto.ts
-  │  │  │  └─ signup.dto.ts
-  │  │  ├─ gurads/
-  │  │  │  └─ roles.gurad.ts
+  │  │  │  ├─ signin.dto.ts
+  │  │  │  ├─ signup.dto.ts
+  │  │  │  └─ updateUser.dto.ts
+  │  │  ├─ guards/
+  │  │  │  └─ roles.guard.ts
   │  │  ├─ schemas/
   │  │  │  └─ user.schema.ts
-  │  │  ├─ attach-user.ts
   │  │  ├─ auth.controller.ts
+  │  │  ├─ auth.guard.ts
   │  │  ├─ auth.module.ts
   │  │  ├─ auth.service.ts
   │  │  └─ jwt.strategy.ts
   │  ├─ cloudinary/
-  │  │  ├─ cloudinary-response.ts
   │  │  ├─ cloudinary.module.ts
+  │  │  ├─ cloudinary.response.ts
   │  │  ├─ cloudinary.service.ts
   │  │  └─ cloudinary.ts
-  │  ├─ image/
-  │  │  ├─ schemas/
-  │  │  │  └─ image.schema.ts
-  │  │  ├─ image.module.ts
-  │  │  └─ image.service.ts
-  │  ├─ menu/
+  │  ├─ images/
+  │  │  ├─ images.controller.ts
+  │  │  ├─ images.module.ts
+  │  │  └─ images.service.ts
+  │  ├─ meal/
   │  │  ├─ dto/
-  │  │  │  ├─ add-menu.ts
-  │  │  │  └─ edit-menu.ts
-  │  │  ├─ schema/
-  │  │  │  └─ menu.schema.ts
-  │  │  ├─ menu.controller.ts
-  │  │  ├─ menu.module.ts
-  │  │  └─ menu.service.ts
-  │  ├─ order/
-  │  │  ├─ dto/
-  │  │  │  └─ order.dto.ts
+  │  │  │  └─ create-meal.dto.ts
   │  │  ├─ schemas/
-  │  │  │  └─ order.schema.ts
-  │  │  ├─ order.controller.ts
-  │  │  ├─ order.module.ts
-  │  │  └─ order.service.ts
-  │  ├─ restaurant/
+  │  │  │  └─ meal.schema.ts
+  │  │  ├─ meal.controller.ts
+  │  │  ├─ meal.module.ts
+  │  │  └─ meal.service.ts
+  │  ├─ restaurents/
   │  │  ├─ dto/
-  │  │  │  ├─ add-restaurant.dto.ts
-  │  │  │  └─ update-restaurant.dto.ts
+  │  │  │  ├─ createRest.dto.ts
+  │  │  │  └─ updateRest.dto copy.ts
   │  │  ├─ schemas/
-  │  │  │  └─ restaurant.schema.ts
-  │  │  ├─ restaurant.controller.ts
-  │  │  ├─ restaurant.service.ts
-  │  │  └─ restaurants.module.ts
-  │  ├─ review/
-  │  │  ├─ dto/
-  │  │  │  └─ create-review.dto.ts
-  │  │  ├─ schemas/
-  │  │  │  └─ review.schema.ts
-  │  │  ├─ review.controller.ts
-  │  │  ├─ review.module.ts
-  │  │  └─ review.service.ts
+  │  │  │  └─ restaurent.schema.ts
+  │  │  ├─ restaurents.controller.ts
+  │  │  ├─ restaurents.module.ts
+  │  │  └─ restaurents.service.ts
+  │  ├─ uploads/
   │  ├─ utils/
-  │  │  └─ apiFeatures.ts
-  │  ├─ app.controller.spec.ts
+  │  │  └─ apiFeatures.utils.ts
   │  ├─ app.controller.ts
   │  ├─ app.module.ts
   │  ├─ app.service.ts
   │  └─ main.ts
-  ├─].env (ignored)
-  ├─ .env.example
+  ├─ .env.development
   ├─ .eslintrc.js
   ├─ .gitignore
   ├─ .prettierrc
@@ -139,6 +122,7 @@ $ npm run test:cov
   ├─ README.md
   ├─ tsconfig.build.json
   └─ tsconfig.json
+
 
 ```
 ## Support
